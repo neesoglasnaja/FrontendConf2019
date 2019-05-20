@@ -1,11 +1,15 @@
-main-color = #1471B6
+main-color = #615c38
+highlight-color = #f5da25
 important-color = #a11212
 
 .shower.full
 	background-color: #111
 
+.shower.list .slide.active
+	box-shadow: 0 0 0 1px highlight-color, 0 0 0 20px highlight-color, 0 20px 50px rgba(0, 0, 0, .3);
+
 .slide::after
-	color main-color
+	color highlight-color
 	background none
 	height 75px
 	right 20px
@@ -17,8 +21,14 @@ important-color = #a11212
 .slide
 	padding-top 60px
 	padding-left 60px
-	h2
-		color main-color
+
+	&.no-top
+		padding-top: 0
+
+	&.center
+		text-align: center
+
+
 
 .hightlight
 .important
@@ -43,7 +53,7 @@ important-color = #a11212
 	color #999999
 	
 .progress
-	border-color main-color rgba(0, 0, 0, 0) main-color main-color
+	border-color highlight-color rgba(0, 0, 0, 0) highlight-color highlight-color
 	
 
 .tag

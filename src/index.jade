@@ -3,7 +3,7 @@ include ./blocks/cover.jade
 include ./blocks/quote.jade
 include ./blocks/frame.jade
 
-- var title = "Как перестать выбирать фреймворки и начать жить"
+- var title = "Как перестать выбирать фреймворки и&nbsp;начать жить"
 
 doctype html
 html(lang='ru')
@@ -22,12 +22,12 @@ html(lang='ru')
       p Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
-      //- +cover('pictures/cover.jpg')
+      +cover('pictures/cover.jpg')
     +slide({header: "", classes: ""})
       div(style="margin-left: 50%; width: 60%; font-size: 0.8em")
         h2 Кто я?
         ul
-          li Верстала еще на таблицах
+          li.next Верстала еще на таблицах
           li.next jQuery, VanillaJS, AngularJS, React, Angular и Vue.js
           li.next И Node.js
           li.next Была начальником отдела фронтенда
@@ -38,8 +38,12 @@ html(lang='ru')
           img.logo(src="pictures/minskjs.png")
           img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 75px")
       +cover('pictures/about-cover.jpg')
-    +slide({header: "Фреймворки в 2019", classes: ""})
-    +slide({header: "Серебряной пули нет", classes: ""})
+    +slide({header: "", classes: ""})
+      +cover('pictures/frameworks.jpg')
+      img(src="pictures/confused.gif", style="position: absolute; left: 30%; bottom: -10%; width: 500px")
+    +slide({header: "", classes: ""})
+      +cover('pictures/bullet.jpg')
+      +cover('pictures/no.png', 'next')
     +slide({header: "Что еще можно сказать про фреймворки?", classes: ""})
       ul
         li Обзор платформы, пересказ документации
@@ -47,26 +51,32 @@ html(lang='ru')
         li Рассказ о библиотеках экосистемы
         li Как мы переехали с инструмента А на инструмент Б и выжили
         li How-to, best practices или примеры из жизни 
-      p.next Нет
-    +slide({header: "Сравнить фреймворки", classes: ""})
-      p.next Нет
-    +slide({header: "Вдохновение", classes: ""})
-    +slide({header: "", classes: ""})
       ul
-        li Листочкин. Антихайп
-        li Симоненко. Про недоверие технологиям
-        li Гусев (Кот). Про проблемы фронтенда
-        li Юзва. Про проблемы в разработке
-        li Климов. "Серия" докладов FWDays разных лет на тему "абcтрактно о JS"
-        li Если подпишитесь на твиттер Козули - боль и депрессия круглый год!
-    +slide({header: "Технологии не главное", classes: ""})
+        li.next Сравнить фреймворки
+      img.next(src="pictures/lol_no.gif", style="position: absolute; bottom: 0; right: 0; width: 300px;")
     +slide({header: "", classes: ""})
-      p Нормально делай - нормально будет
+      img.cover(src='pictures/inspiration.gif', style="width: 100%")
+    //- +slide({header: "", classes: "no-top center"})
+    //-   img(src="pictures/talks/listochkin.jpg", style="display: inline-block; margin: 10px; width: 30%")
+    //-   img.next(src="pictures/talks/simonenko.jpg", style="display: inline-block; margin: 10px; width: 30%")
+    //-   img.next(src="pictures/talks/kot.jpg", style="display: inline-block; margin: 10px; width: 30%")
+    //-   img.next(src="pictures/talks/yuzva.jpg", style="display: inline-block; margin: 10px; width: 30%")
+    //-   img.next(src="pictures/talks/klimov.jpg", style="display: inline-block; margin: 10px; width: 30%")
+    //-   img.next(src="pictures/talks/vkozulya.jpg", style="display: inline-block; margin: 10px; width: 30%")
     +slide({header: "", classes: ""})
-      p JavaScript мертв*
+      +cover('pictures/listochkin.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/simonenko.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/kot.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/yuzva.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/klimov.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/tears.jpg')
-    +slide({header: "Почему все плохо?", classes: ""})
+    +slide({header: "", classes: ""})
+      h2(style="position: absolute; top: 25%; right: 10%; color: #000") Почему все плохо?
       +cover('pictures/philosoraptor.jpg')
     +slide({header: "Претензия 1. Плохой язык", classes: ""})
       +cover('pictures/fake_js_logo.jpg')
@@ -82,28 +92,92 @@ html(lang='ru')
       +cover('pictures/backend.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/teamleads.jpg')
-    +slide({header: "Претензия 2. Слишком много всего", classes: ""})
-      +cover('pictures/npm.jpg')
+    +slide({header: "Претензия 2. Слишком много инструментов", classes: ""})
+      +cover('pictures/too_much.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/competition.gif')
     +slide({header: "Претензия 3. Много велосипедов", classes: ""})
       +cover('pictures/suffer.jpg')
+    +slide({header: "Все уже было в симсонах", classes: ""})    
     +slide({header: "", classes: ""})
       +cover('pictures/velo.jpg')
     +slide({header: "Претензия 4. Все быстро меняется", classes: ""})
+    +slide({header: "Меняется веб", classes: ""})
+    +slide({header: "У топ-3 есть устоявшаяся инфраструктура", classes: ""})
+    +slide({header: "React как легаси", classes: ""})
+      +cover('pictures/scared.gif')
     +slide({header: "Претензия 5. Длинная кривая обучения", classes: ""})
       +cover('pictures/long_way.jpg')
     +slide({header: "", classes: ""})
+      +cover('pictures/happiness.jpg')
     +slide({header: "", classes: ""})
+      +cover('pictures/good.gif')
     +slide({header: "", classes: ""})
+      +cover('pictures/deeper.jpg')
+    +slide({header: "Факт 1. В браузере есть только HTML (XML), CSS и JS", classes: ""})
     +slide({header: "", classes: ""})
+      +cover('pictures/candy.gif')
+    +slide({header: "Факт 2. Чтобы быть хорошим разработчиком в 2019 году, надо много знать", classes: ""})
+
+    +slide({header: "Для джунов выставляются завышенные требования", classes: ""})
+    +slide({header: "Мидлам сложно расти, так как на них и так большая нагрузка", classes: ""})
+    +slide({header: "Синьоры за годы своей карьеры просто устали постоянно не выгорать", classes: ""})
+    +slide({header: "А тимлиды уже на той стадии, что помимо технологий еще и людей ненавидят", classes: ""})
+    +slide({header: "Факт 3. Мало кто заглядывает \"под капот\" инструментов", classes: ""})
     +slide({header: "", classes: ""})
+      +cover('pictures/swift-tweet.jpg')
     +slide({header: "", classes: ""})
+      +cover('pictures/explosion.gif')
     +slide({header: "", classes: ""})
+      +cover('pictures/netscape.gif')
     +slide({header: "", classes: ""})
+      +cover('pictures/jquery.jpg')
     +slide({header: "", classes: ""})
+      +cover('pictures/bootstrap.jpg')
+    +slide({header: "Все опять плохо, надо меняться", classes: ""})
+    
+    +slide({header: "Классические архитектуры", classes: ""})
     +slide({header: "", classes: ""})
+      +cover('pictures/angularjs.jpg')
+    +slide({header: "Knockout", classes: ""})
+    +slide({header: "Backbone", classes: ""})
+    +slide({header: "Ember", classes: ""})
+    +slide({header: "Амбициозные веб-приложения", classes: ""})
+    +slide({header: "Ember CLI", classes: ""})
+    +slide({header: "Монолит не торт", classes: ""})
     +slide({header: "", classes: ""})
-    +slide({header: "", classes: ""})
-    +slide({name: 'theend', header: "Вопросы?", classes: 'cover'})
+      +cover('pictures/times.jpg')
+    +slide({header: "React", classes: ""})
+    +slide({header: "Vue", classes: ""})
+    +slide({header: "Angular", classes: ""})
+    +slide({header: "Микросервисы стали хайпом", classes: ""})
+    +slide({header: "Polymer", classes: ""})
+    +slide({header: "Что нужно от современного фреймворка?", classes: ""})
+      ul
+        li Компонентность
+        li Модульность
+        li Расширяемость
+        li Быстродействие
+        li SEO
+        li Хороший DX
+    +slide({header: "Выбирай любой!", classes: ""})
+    +slide({header: "Как выбирать", classes: ""})
+      ul
+        li Оценить знания и опыт команды
+        li Сложность проекта и технические требованию к проекту
+        li Сроки
+    +slide({header: "Выбирайте экосистему", classes: ""})
+    +slide({header: "Подводя итог", classes: ""})
+      ul
+        li Важен бизнес и его цели
+        li Важны знания основ, парадигм и концепций
+        li Важен баланс и здравый смысл
+        li Не прекращайте учиться
+    +slide({header: "P.S.", classes: ""})
+      p Бешеные псы 2
+    +slide({header: "P.P.S.", classes: ""})
+      p Фреймворки - это чужой говнокод
+    +slide({name: 'theend', header: "Спасибо за внимание", classes: 'cover'})
       p.end-link
         a.bigger(href="http://bit.ly/" target="_blank") bit.ly/
         br
