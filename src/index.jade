@@ -56,13 +56,6 @@ html(lang='ru')
       img.next(src="pictures/lol_no.gif", style="position: absolute; bottom: 0; right: 0; width: 300px;")
     +slide({header: "", classes: ""})
       img.cover(src='pictures/inspiration.gif', style="width: 100%")
-    //- +slide({header: "", classes: "no-top center"})
-    //-   img(src="pictures/talks/listochkin.jpg", style="display: inline-block; margin: 10px; width: 30%")
-    //-   img.next(src="pictures/talks/simonenko.jpg", style="display: inline-block; margin: 10px; width: 30%")
-    //-   img.next(src="pictures/talks/kot.jpg", style="display: inline-block; margin: 10px; width: 30%")
-    //-   img.next(src="pictures/talks/yuzva.jpg", style="display: inline-block; margin: 10px; width: 30%")
-    //-   img.next(src="pictures/talks/klimov.jpg", style="display: inline-block; margin: 10px; width: 30%")
-    //-   img.next(src="pictures/talks/vkozulya.jpg", style="display: inline-block; margin: 10px; width: 30%")
     +slide({header: "", classes: ""})
       +cover('pictures/listochkin.jpg')
     +slide({header: "", classes: ""})
@@ -76,7 +69,7 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       +cover('pictures/tears.jpg')
     +slide({header: "", classes: ""})
-      h2(style="position: absolute; top: 25%; right: 10%; color: #000") Почему все плохо?
+      h2(style="position: absolute; top: 25%; right: 10%; color: #0d1a0a") Что не так с JS?
       +cover('pictures/philosoraptor.jpg')
     +slide({header: "Претензия 1. Плохой язык", classes: ""})
       +cover('pictures/fake_js_logo.jpg')
@@ -113,16 +106,29 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       +cover('pictures/good.gif')
     +slide({header: "", classes: ""})
+      +cover('pictures/hard.jpg')
+    +slide({header: "", classes: ""})
       +cover('pictures/deeper.jpg')
-    +slide({header: "Факт 1. В браузере есть только HTML (XML), CSS и JS", classes: ""})
+    +slide({header: "Факт 1. В браузере только HTML, CSS и JS", classes: ""})
+      +cover('pictures/browser.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/candy.gif')
+    +slide({header: "", classes: ""})
+      p Чему в JavaScript будет равен i после выполнения var i = 5; i = ++i + ++i; ? 
+    +slide({header: "", classes: ""})
+      +cover('pictures/ugly.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/know.jpg')
     +slide({header: "Факт 2. Чтобы быть хорошим разработчиком в 2019 году, надо много знать", classes: ""})
-
+      +cover('pictures/bad.jpg')
     +slide({header: "Для джунов выставляются завышенные требования", classes: ""})
+      +cover('pictures/junior.gif')
     +slide({header: "Мидлам сложно расти, так как на них и так большая нагрузка", classes: ""})
+      +cover('pictures/middle.gif')
     +slide({header: "Синьоры за годы своей карьеры просто устали постоянно не выгорать", classes: ""})
+      +cover('pictures/no_thanks.gif')
     +slide({header: "А тимлиды уже на той стадии, что помимо технологий еще и людей ненавидят", classes: ""})
+      +cover('pictures/lead.gif')
     +slide({header: "Факт 3. Мало кто заглядывает \"под капот\" инструментов", classes: ""})
     +slide({header: "", classes: ""})
       +cover('pictures/swift-tweet.jpg')
@@ -196,18 +202,19 @@ html(lang='ru')
         li Важны знания основ, парадигм и концепций
         li Важен баланс и здравый смысл
         li Не прекращайте учиться
-    +slide({header: "P.S.", classes: ""})
-      p Бешеные псы 2
+    +slide({header: "", classes: ""})
+      h2(style="color: #eee") P.S. А что выбрать, если...
+      +cover('pictures/mad_dogs.jpg')
     +slide({header: "P.P.S.", classes: ""})
-      p Фреймворки - это чужой говнокод
-    +slide({name: 'theend', header: "Спасибо за внимание", classes: 'cover'})
-      p.end-link
-        a.bigger(href="http://bit.ly/" target="_blank") bit.ly/
+      p(style="display: inline-block; background-color: #000; color: #fff; margin-top: 80px; font-size: 50px; padding: 30px;") Фреймворки — это чужой говнокод
+    +slide({name: 'theend', header: "", classes: ''})
+      p.end-link(style="position: absolute; bottom: 5%")
+        a.bigger(href="http://bit.ly/fc2019-frameworks" target="_blank") bit.ly/fc2019-frameworks
         br
         | Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
-      +cover('pictures/blur_cover.jpg')
+      img.cover(src='pictures/the_end.gif', style="min-height: 240%; max-width: none")
 
     .progress
     script(src='shower/shower.min.js')
