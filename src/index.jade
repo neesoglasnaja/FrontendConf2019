@@ -41,7 +41,7 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       +cover('pictures/frameworks.jpg')
       img(src="pictures/confused.gif", style="position: absolute; left: 30%; bottom: -10%; width: 500px")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/bullet.jpg')
       +cover('pictures/no.png', 'next')
     +slide({header: "Что еще можно сказать про фреймворки?", classes: ""})
@@ -54,22 +54,27 @@ html(lang='ru')
       ul
         li.next Сравнить фреймворки
       img.next(src="pictures/lol_no.gif", style="position: absolute; bottom: 0; right: 0; width: 300px;")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src='pictures/inspiration.gif', style="width: 100%")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://www.youtube.com/watch?v=xPFRUM_oDKA") Андрей Листочкин - Антихайп
       +cover('pictures/listochkin.jpg')
     +slide({header: "", classes: ""})
+      a.copyright(href="https://www.youtube.com/watch?v=p5g4giWmcvE") Алексей Симоменко - Как я перестал верить технологиям
       +cover('pictures/simonenko.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://www.youtube.com/watch?v=jPbqeSSDuug") Евгений (Гусев) Кот - Лебедь, рак и щука
       +cover('pictures/kot.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://www.youtube.com/watch?v=MzTng78DCm4") Максим Юзва - 
       +cover('pictures/yuzva.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://www.youtube.com/watch?v=jzaZlEOSwoA") Илья Климов
       +cover('pictures/klimov.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/tears.jpg')
-    +slide({header: "", classes: ""})
-      h2(style="position: absolute; top: 25%; right: 10%; color: #0d1a0a") Что не так с JS?
+    +slide({header: "", classes: "no-page"})
+      h2(style="position: absolute; top: 25%; right: 10%; color: #0d1a0a") Что не так с JavaScript?
       +cover('pictures/philosoraptor.jpg')
     +slide({header: "Претензия 1. Плохой язык", classes: ""})
       +cover('pictures/fake_js_logo.jpg')
@@ -77,18 +82,21 @@ html(lang='ru')
       +cover('pictures/true_is_false.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/esnext.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="") Линк
       +cover('pictures/features.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/other_languages.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/backend.jpg')
     +slide({header: "", classes: ""})
+      a.copyright(href="") Линк
       +cover('pictures/teamleads.jpg')
     +slide({header: "", classes: ""})
       h2(style="color: #fff; position: absolute; top: 35%; right: 10%; text-shadow: 0 0 10px #000, 0 0 20px #000") Претензия 2.<br>Много инструментов
       +cover('pictures/too_much.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="") Линк
       +cover('pictures/insane.jpg')
     +slide({header: "", classes: ""})
       img.cover(src="pictures/competition.gif", style="width: 100%")
@@ -96,35 +104,38 @@ html(lang='ru')
       +cover('pictures/suffer.jpg')
     +slide({header: "", classes: ""})    
       +cover('pictures/velo.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/npm.jpg')
     +slide({header: "Претензия 4. Все быстро меняется", classes: ""})
       +cover('pictures/speed.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/web.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/ecosystem.jpg')
     +slide({header: "", classes: ""})
       img.cover(src="pictures/banana.gif", style="width: 100%")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/legacy.jpg')
     +slide({header: "", classes: ""})
+      a.copyright(href="") Линк
       +cover('pictures/netflix.jpg')
     +slide({header: "Претензия 5. Длинная кривая обучения", classes: ""})
+      a.copyright(href="") Линк
       +cover('pictures/long_way.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/experience.jpg')
     +slide({header: "", classes: ""})
+      a.copyright(href="") Линк
       +cover('pictures/happiness.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/good.gif", style="width: 100%; max-height: none;")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/deeper.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/hard.jpg')
     +slide({header: "Факт 1. В браузере только HTML, CSS и JS", classes: ""})
       +cover('pictures/browser.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/candy.gif", style="width: 100%; max-height: none;")
     +slide({header: "", classes: ""})
       +cover('pictures/ugly.jpg')
@@ -135,22 +146,23 @@ html(lang='ru')
           |  после выполнения
         pre(style="font-family: monospace;  font-size: 45px; display: inline-block; background-color: #ddd; padding: 10px 30px") var i = 5; i = ++i + ++i;
     +slide({header: "", classes: ""})
+      a.copyright(href="") Линк
       +cover('pictures/know.jpg')
     +slide({header: "Факт 2. Чтобы быть крутым фронтендером, надо много знать", classes: ""})
       +cover('pictures/bad.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/path.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/free.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/job.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/junior.gif", style="width: 100%; max-height: none;")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/middle.gif", style="width: 100%; max-height: none;")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/no_thanks.gif", style="width: 100%; max-height: none;")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/lead.gif", style="width: 100%; max-height: none;")
     +slide({header: "", classes: "black"})
       img.cover(src="pictures/avocado.gif", style="height: 100%; max-width: none;")
@@ -160,7 +172,7 @@ html(lang='ru')
       +cover('pictures/clients.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/swift-tweet.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/explosion.gif", style="width: 100%; max-height: none;")
     +slide({header: "", classes: ""})
       +cover('pictures/history.jpg')
@@ -184,9 +196,10 @@ html(lang='ru')
       +cover('pictures/mv.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/angularjs.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="") Линк
       +cover('pictures/google_feedback.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/spongebob.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/knockout.jpg')
@@ -194,7 +207,7 @@ html(lang='ru')
       +cover('pictures/backbone.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/ember.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/ambitions.jpg')
     +slide({header: "*Монолит", classes: ""})
       +cover('pictures/period_2.jpg')
@@ -202,7 +215,10 @@ html(lang='ru')
       img.cover(src="pictures/slow.gif", style="height: 100%; max-width: none;")
     +slide({header: "", classes: ""})
       +cover('pictures/react.jpg')
+    +slide({header: "Реакт история", classes: ""})
+      a.copyright(href="") Линк
     +slide({header: "", classes: ""})
+      a.copyright(href="") Линк
       +cover('pictures/react_way.jpg')
     +slide({header: "", classes: ""})
       img.cover(src="pictures/castle.gif", style="width: 100%; max-height: none;")
@@ -219,17 +235,18 @@ html(lang='ru')
     +slide({header: "Что нужно от современного фреймворка?", classes: ""})
       ul
         li Компонентность
-        li Модульность
-        li Расширяемость
-        li Быстродействие
-        li SEO
-        li Хороший DX
+        li.next Модульность
+        li.next Расширяемость
+        li.next Производительность
+        li.next SEO
+        li.next Хороший DX
+      +cover('pictures/want.jpg')
     +slide({header: "Выбирай любой!", classes: "", shout: true})
     +slide({header: "Как выбирать", classes: ""})
       ul
         li Оценить знания и опыт команды
-        li Сложность проекта и технические требования
-        li Сроки
+        li.next Сложность проекта и технические требования
+        li.next Сроки
     +slide({header: "", classes: ""})
       +cover('pictures/quasar_ionic.jpg')
     +slide({header: "", classes: ""})
@@ -237,15 +254,18 @@ html(lang='ru')
     +slide({header: "Подводя итог", classes: ""})
       ul
         li Важен бизнес и его цели
-        li Важны знания основ, парадигм и концепций
-        li Важен баланс и здравый смысл
-        li Не прекращайте учиться
+        li.next Важны знания основ, парадигм и концепций
+        li.next Важен баланс и здравый смысл
+        li.next Не прекращайте учиться
     +slide({header: "", classes: ""})
       h2(style="color: #eee") P.S. А что выбрать, если...
+      a.copyright(href="") Линк
       +cover('pictures/mad_dogs.jpg')
     +slide({header: "", classes: ""})
+      a.copyright(href="") Линк
       +cover('pictures/realworld.jpg')
-    +slide({header: "P.P.S.", classes: ""})
+    +slide({header: "", classes: ""})
+      h2(style="color: #eee") P.P.S.
       p(style="display: inline-block; background-color: #000; color: #fff; margin-top: 115px; font-size: 90px; padding: 30px; line-height: 1.2;") Фреймворки — это&nbsp;чужой&nbsp;говнокод
       +cover('pictures/evil.jpg')
     +slide({name: 'theend', header: "", classes: ''})
